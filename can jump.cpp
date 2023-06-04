@@ -21,5 +21,13 @@ int main(){
 	for(int i=0;i<n;i++){
 		cin >> a[i];
 	}
+	int ok=0;
 	Solve(0,0);
+	for(auto x:vt){
+           if(x==n-1){
+             ok=1;
+	      break;
+	   }
+	if(ok==1) cout << "YES";
+		else cout << "No";
 }
