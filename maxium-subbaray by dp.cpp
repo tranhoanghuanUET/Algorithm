@@ -10,7 +10,7 @@ int main(){
 		cin >> a[i];
 	}
 	for(int i=0;i<n;i++){
-		dp[i]=max(dp[i-1],dp[i-1]+a[i]);
+		dp[i]=max(a[i],dp[i-1]+a[i]);
 	}
 	for(int i=0;i<n;i++){
 		cout << dp[i] << " ";
